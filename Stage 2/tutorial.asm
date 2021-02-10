@@ -37,7 +37,7 @@ CMAIN:
     
     mov ax, 7
     mov bl, 2
-    div bl ; bl(1byte만 가능)/ax: al에 몫 저장. ah 에 나머지 저장 
+    div bl ; ax/bl(1byte만 가능): al에 몫 저장. ah 에 나머지 저장 
     PRINT_DEC 1, al ; 몫 
     NEWLINE
     mov al, ah

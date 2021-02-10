@@ -65,7 +65,7 @@ CMAIN:
     ; 2byte 이상 나눗셈
     mov eax, 0x12345678
     mov bx, 0x4567
-    mov edx, eax ; eax를 dx:ax로 분리 
+    mov edx, eax ; eax를 ax:dx로 분리 
     shr edx, 16
     and eax, 0x0000ffff
     div bx ; ax:dx / bx
